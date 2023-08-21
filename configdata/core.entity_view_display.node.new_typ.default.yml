@@ -1,0 +1,28 @@
+uuid: eb9aaacd-ab1e-42ae-b282-08fc7a0e5a60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.new_typ.body
+    - node.type.new_typ
+  module:
+    - text
+    - user
+id: node.new_typ.default
+targetEntityType: node
+bundle: new_typ
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

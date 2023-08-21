@@ -1,0 +1,20 @@
+uuid: a3c4677e-6475-4f7e-9d8e-58d326971933
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_basic_tax
+field_name: field_basic_tax
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

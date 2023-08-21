@@ -1,0 +1,29 @@
+uuid: 7cba4626-3025-4cc0-a414-bb071e56b2e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_basic_tax
+    - node.type.page
+    - taxonomy.vocabulary.catagory
+id: node.page.field_basic_tax
+field_name: field_basic_tax
+entity_type: node
+bundle: page
+label: 'basic tax'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      catagory: catagory
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
